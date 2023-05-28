@@ -93,7 +93,7 @@ O Vue.js oferece recursos adicionais para a manipulação de DOM, facilitando a 
 
 - Use a diretiva ref para obter referências a elementos específicos do DOM no código Vue.js.
 
-> A diretiva ref é usada para obter referências a elementos ou componentes no DOM real, permitindo que você acesse e manipule diretamente esses elementos. As modificações feitas através da referência ref afetam a DOM rea
+> A diretiva ref é usada para obter referências a elementos ou componentes no DOM real, permitindo que você acesse e manipule diretamente esses elementos. As modificações feitas através da referência ref afetam a DOM real.
 
 ```javascript
 <template>
@@ -118,17 +118,17 @@ export default {
 </script>
 ```
 
-# Boas Praticas
+# Boas Práticas
 
-1. De preferencia para usar frameworks como vue ou react para manipular a DOM.
+1. De preferência para usar frameworks como vue ou react para manipular a DOM.
 
-2. Sempre que possivel utiize ID para de referir ao elemento que deseja manipular.
+2. Sempre que possível utilize ID para de referir ao elemento que deseja manipular.
 
-3. Salve o elemento em uma variavel para não usar o seletor multiplas vezes.
+3. Salve o elemento em uma variável para não usar o seletor múltiplas vezes.
 
 4. Ao remover um elemento da DOM lembre-se de remover todos os eventos.
 
-5. Ao lidar com a sitação onde varios elementos compartilham de um unico evento, considere usar o conseito de Eventos delegados. Que consiste em colocar o evento do pai e checar se o target faz parte dessa lista de elementos que deveriam ter esse evento.
+5. Ao lidar com a situação onde vários elementos compartilham de um único evento, considere usar o conceito de Eventos delegados. Que consiste em colocar o evento do pai e checar se o target faz parte dessa lista de elementos que deveriam ter esse evento.
 
 ```javascript
 const lista = document.getElementById("minhaLista");
@@ -140,9 +140,9 @@ lista.addEventListener("click", function (event) {
 });
 ```
 
-# Exemplos Praticos
+# Exemplos Práticos
 
-1. Imprimir um elemento especifico da tela.
+1. Imprimir um elemento específico da tela.
 
    > @services\utils.ts
 
@@ -150,10 +150,10 @@ lista.addEventListener("click", function (event) {
 
    > @services\Map\mapComponent.ts
 
-3. Criar indicações de movimento na tela para o usario.
+3. Criar indicações de movimento na tela para o usuário.
 
    > @views\Vessels\DeckPlanning\DeckContainer.vue
 
-4. Criar um scroll dinamico, baseado na viewport do usuario.
+4. Criar um scroll dinâmico, baseado na viewport do usuário.
 
    > @components\ganttChart\components\modals\NewTask\NewTaskContainer.vue
