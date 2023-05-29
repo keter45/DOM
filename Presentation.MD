@@ -41,14 +41,19 @@ document.body.appendChild(novoElemento);
 - Adicione manipuladores de eventos aos elementos do DOM usando o método addEventListener.
 
 ```javascript
-// Adicionando um manipulador de evento de clique
-meuElemento.addEventListener("click", () => {
-  console.log("Clicou no elemento!");
-});
+const myEventHandler = () => {
+  console.log(meuElemento);
+};
 
-// Removendo um elemento do DOM
-meuElemento.remove();
+// Adicionando um manipulador de evento de clique
+meuElemento.addEventListener("click", myEventHandler);
+
+// Remover o event listener
+meuElemento.removeEventListener("click", myEventHandler);
 ```
+
+>É importante garantir que a função do manipulador de evento passada para removeEventListener seja exatamente a mesma função que foi passada para addEventListener. Caso contrário, o event listener não será removido corretamente.
+
 
 ## 5. Traversing (navegação) do DOM
 
