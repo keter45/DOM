@@ -89,7 +89,6 @@ O Vue.js oferece recursos adicionais para a manipulação de DOM, facilitando a 
 ## Diretivas
 
 - Use diretivas como v-bind, v-if, v-for para vincular dados, renderizar elementos condicionalmente e renderizar listas no DOM.
-  Manipulação de eventos
 
 - Utilize a diretiva v-on para lidar com eventos no DOM, associando métodos Vue.js a eventos específicos.
 
