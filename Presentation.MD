@@ -41,8 +41,8 @@ document.body.appendChild(novoElemento);
 - Adicione manipuladores de eventos aos elementos do DOM usando o método addEventListener.
 
 ```javascript
-const myEventHandler = () => {
-  console.log(meuElemento);
+const myEventHandler = function (){
+  console.log(this);
 };
 
 // Adicionando um manipulador de evento de clique
