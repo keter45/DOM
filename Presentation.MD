@@ -13,7 +13,9 @@
 const meuElemento = document.getElementById("meuId");
 
 // Acessando elementos usando seletores CSS
+// querySelector === .find Acha o primeiro
 const meuElemento2 = document.querySelector(".minhaClasse");
+// Seleciona todos
 const meusElementos = document.querySelectorAll("p");
 ```
 
@@ -40,7 +42,7 @@ document.body.appendChild(novoElemento);
 
 ```javascript
 // Adicionando um manipulador de evento de clique
-meuElemento.addEventListener("click", function () {
+meuElemento.addEventListener("click", () => {
   console.log("Clicou no elemento!");
 });
 
