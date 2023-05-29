@@ -85,7 +85,6 @@ O Vue.js oferece recursos adicionais para a manipulação de DOM, facilitando a 
   Manipulação de eventos
 
 - Utilize a diretiva v-on para lidar com eventos no DOM, associando métodos Vue.js a eventos específicos.
-  Propriedades computadas
 
 - Defina propriedades computadas que são calculadas com base em dados reativos e atualizadas automaticamente sempre que os dados relevantes mudarem.
 
