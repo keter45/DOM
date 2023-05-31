@@ -1,4 +1,6 @@
-# Manipulação de DOM com JavaScript puro
+[slides](https://docs.google.com/presentation/d/1IMSSEQtUm5gXzzi_B7OtP58SLKjrTr3nfwK-vi-bcqA/edit#slide=id.g1388be8e982_0_3)
+
+# Manipulação de DOM com JavaScript
 
 ## 1. Introdução à DOM
 
@@ -41,8 +43,8 @@ document.body.appendChild(novoElemento);
 - Adicione manipuladores de eventos aos elementos do DOM usando o método addEventListener.
 
 ```javascript
-const myEventHandler = function (){
-  console.log(this);
+const myEventHandler = function () {
+	console.log(this);
 };
 
 // Adicionando um manipulador de evento de clique
@@ -52,8 +54,7 @@ meuElemento.addEventListener("click", myEventHandler);
 meuElemento.removeEventListener("click", myEventHandler);
 ```
 
->É importante garantir que a função do manipulador de evento passada para removeEventListener seja exatamente a mesma função que foi passada para addEventListener. Caso contrário, o event listener não será removido corretamente.
-
+> É importante garantir que a função do manipulador de evento passada para removeEventListener seja exatamente a mesma função que foi passada para addEventListener. Caso contrário, o event listener não será removido corretamente.
 
 ## 5. Traversing (navegação) do DOM
 
@@ -71,7 +72,7 @@ const filhosDoElemento = meuElemento.childNodes;
 
 // Iterando pelos filhos de um elemento
 filhosDoElemento.forEach((filho) => {
-  console.log(filho);
+	console.log(filho);
 });
 
 // Acessando o próximo elemento irmão
@@ -139,9 +140,9 @@ export default {
 const lista = document.getElementById("minhaLista");
 
 lista.addEventListener("click", function (event) {
-  if (event.target.tagName === "LI") {
-    console.log("Clicou em um item da lista:", event.target.textContent);
-  }
+	if (event.target.tagName === "LI") {
+		console.log("Clicou em um item da lista:", event.target.textContent);
+	}
 });
 ```
 

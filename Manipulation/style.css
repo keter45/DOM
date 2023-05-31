@@ -1,0 +1,12 @@
+.container {
+	background-color: black;
+	color: aliceblue;
+	padding: 20px;
+	font-size: 24px;
+}
+li {
+	list-style: none;
+	padding: 5px;
+	margin: 10px;
+	background-color: darkolivegreen;
+}
