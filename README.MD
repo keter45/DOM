@@ -150,16 +150,8 @@ lista.addEventListener("click", function (event) {
 
 1. Imprimir um elemento específico da tela.
 
-   > @services\utils.ts
-
 2. Interação com bibliotecas antigas.
-
-   > @services\Map\mapComponent.ts
 
 3. Criar indicações de movimento na tela para o usuário.
 
-   > @views\Vessels\DeckPlanning\DeckContainer.vue
-
 4. Criar um scroll dinâmico, baseado na viewport do usuário.
-
-   > @components\ganttChart\components\modals\NewTask\NewTaskContainer.vue
